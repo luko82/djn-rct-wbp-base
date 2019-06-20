@@ -1,0 +1,28 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "espacios-ui",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js --progress --colors --mode production",
+    "watch": "webpack --config webpack.dev.config.js --watch --mode development",
+    "start": "webpack-dev-server --config webpack.dev.config.js --hot --inline"
+  },
+  "author": "Luko",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "react-hot-loader": "^4.11.1",
+    "webpack": "^4.34.0",
+    "webpack-bundle-tracker": "^0.4.2-beta",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
